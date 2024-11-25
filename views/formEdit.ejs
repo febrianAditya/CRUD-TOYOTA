@@ -1,0 +1,18 @@
+<h1>Form Edit <%= dataUser.id %> </h1>
+
+
+<form action="/handle-data-edit/<%=dataUser.id%>" method="POST">
+    <label for="">First Name</label>
+    <input type="text" value="<%= dataUser.first_name %>" name="firstName"> <br>
+    <label for="">Last Name</label>
+    <input type="text" value="<%= dataUser.last_name %>" name="last_name"> <br>
+    <label for="">Email</label>
+    <input type="text" placeholder="email" value="<%= dataUser.email %>" name="email"> <br>
+    <label for="">Gender</label>
+    <input type="text" placeholder="gender" value="<%= dataUser.gender %>" name="gender"> <br>
+    <input type="submit" value="Edit">
+</form>
+
+<button>
+    <a href="/user">Back</a>
+</button>
